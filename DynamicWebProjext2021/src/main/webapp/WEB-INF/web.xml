@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation=" http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+	<servlet>
+		<servlet-name>ManagerServlet</servlet-name>
+		<servlet-class>dynamic.com.web.service.ManagerServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ManagerServlet</servlet-name>
+		<url-pattern>/checkCredentioals</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CancellationServlet</servlet-name>
+		<servlet-class>dynamic.com.web.service.jsp.services.CancellationServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CancellationServlet</servlet-name>
+		<url-pattern>/CancelDate</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddAppointment</servlet-name>
+		<servlet-class>dynamic.com.web.service.jsp.services.AddAppointment</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddAppointment</servlet-name>
+		<url-pattern>/AddDate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreateAppointmentsServlet</servlet-name>
+		<servlet-class>dynamic.com.web.service.jsp.services.CreateAppointmentsServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CreateAppointmentsServlet</servlet-name>
+		<url-pattern>/CreateDate</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
